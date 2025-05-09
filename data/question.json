@@ -1,0 +1,63 @@
+{
+    "id": "general-knowledge",
+    "title": "Quiz di Cultura Generale",
+    "description": "Metti alla prova le tue conoscenze con queste domande di cultura generale!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Qual è la capitale dell'Italia?",
+        "options": [
+          { "id": 1, "text": "Milano" },
+          { "id": 2, "text": "Roma" },
+          { "id": 3, "text": "Napoli" },
+          { "id": 4, "text": "Firenze" }
+        ],
+        "correctOptionId": 2
+      },
+      {
+        "id": 2,
+        "question": "Chi ha dipinto la Gioconda?",
+        "options": [
+          { "id": 1, "text": "Michelangelo" },
+          { "id": 2, "text": "Leonardo da Vinci" },
+          { "id": 3, "text": "Raffaello" },
+          { "id": 4, "text": "Caravaggio" }
+        ],
+        "correctOptionId": 2
+      },
+      {
+        "id": 3,
+        "question": "Qual è il pianeta più grande del sistema solare?",
+        "options": [
+          { "id": 1, "text": "Terra" },
+          { "id": 2, "text": "Giove" },
+          { "id": 3, "text": "Saturno" },
+          { "id": 4, "text": "Marte" }
+        ],
+        "correctOptionId": 2
+      },
+      {
+        "id": 4,
+        "question": "Quanti lati ha un pentagono?",
+        "options": [
+          { "id": 1, "text": "4" },
+          { "id": 2, "text": "5" },
+          { "id": 3, "text": "6" },
+          { "id": 4, "text": "7" }
+        ],
+        "correctOptionId": 2
+      },
+      {
+        "id": 5,
+        "question": "Chi ha scritto 'I Promessi Sposi'?",
+        "options": [
+          { "id": 1, "text": "Italo Calvino" },
+          { "id": 2, "text": "Alessandro Manzoni" },
+          { "id": 3, "text": "Giacomo Leopardi" },
+          { "id": 4, "text": "Luigi Pirandello" }
+        ],
+        "correctOptionId": 2
+      }
+    ]
+  }
+  
