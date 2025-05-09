@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useQuiz } from "../../context/QuizContext";
-import ResultSummary from "../../components/ResultSummary";
+import ResultSummary from "../../components/ResultSummart";
 
 export default function ResultsPage() {
   const router = useRouter();
