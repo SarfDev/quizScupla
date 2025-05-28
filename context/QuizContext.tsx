@@ -4,12 +4,14 @@ import React, { createContext, useContext, useState, ReactNode } from "react";
 import { Quiz, Question, UserAnswer, QuizResults } from "../types/quiz";
 
 interface QuizContextType {
-  quiz: Quiz | null;
+  quizzes: Quiz[] | null;
+  currentQuiz: Quiz | null;
   currentQuestionIndex: number;
   userAnswers: UserAnswer[];
   results: QuizResults | null;
   isLoading: boolean;
-  loadQuiz: (quizData: Quiz) => void;
+  loadQuizzes: (quizzesData: Quiz[]) => void;
+  setCurrentQuizById: (quizId: string) => void;
   nextQuestion: () => void;
   previousQuestion: () => void;
   answerQuestion: (questionId: number, optionId: number) => void;
@@ -22,21 +24,31 @@ const QuizContext = createContext<QuizContextType | undefined>(undefined);
 export const QuizProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
-  const [quiz, setQuiz] = useState<Quiz | null>(null);
+  const [quizzes, setQuizzes] = useState<Quiz[] | null>(null);
+  const [currentQuiz, setCurrentQuiz] = useState<Quiz | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
   const [results, setResults] = useState<QuizResults | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const loadQuiz = (quizData: Quiz) => {
-    setQuiz(quizData);
-    setCurrentQuestionIndex(0);
-    setUserAnswers([]);
-    setResults(null);
+  const loadQuizzes = (quizzesData: Quiz[]) => {
+    setQuizzes(quizzesData);
+  };
+
+  const setCurrentQuizById = (quizId: string) => {
+    if (!quizzes) return;
+    
+    const quiz = quizzes.find(q => q.id === quizId);
+    if (quiz) {
+      setCurrentQuiz(quiz);
+      setCurrentQuestionIndex(0);
+      setUserAnswers([]);
+      setResults(null);
+    }
   };
 
   const nextQuestion = () => {
-    if (quiz && currentQuestionIndex < quiz.questions.length - 1) {
+    if (currentQuiz && currentQuestionIndex < currentQuiz.questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     }
   };
@@ -48,9 +60,9 @@ export const QuizProvider: React.FC<{ children: ReactNode }> = ({
   };
 
   const answerQuestion = (questionId: number, optionId: number) => {
-    if (!quiz) return;
+    if (!currentQuiz) return;
 
-    const question = quiz.questions.find((q) => q.id === questionId);
+    const question = currentQuiz.questions.find((q) => q.id === questionId);
 
     if (!question) return;
 
@@ -83,9 +95,9 @@ export const QuizProvider: React.FC<{ children: ReactNode }> = ({
   };
 
   const calculateResults = () => {
-    if (!quiz) return;
+    if (!currentQuiz) return;
 
-    const totalQuestions = quiz.questions.length;
+    const totalQuestions = currentQuiz.questions.length;
     const correctAnswers = userAnswers.filter(
       (answer) => answer.isCorrect
     ).length;
@@ -108,12 +120,14 @@ export const QuizProvider: React.FC<{ children: ReactNode }> = ({
   return (
     <QuizContext.Provider
       value={{
-        quiz,
+        quizzes,
+        currentQuiz,
         currentQuestionIndex,
         userAnswers,
         results,
         isLoading,
-        loadQuiz,
+        loadQuizzes,
+        setCurrentQuizById,
         nextQuestion,
         previousQuestion,
         answerQuestion,

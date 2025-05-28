@@ -1,63 +1,604 @@
+[
+  {
+  "id": "network-layer",
+  "title": "Quiz sul Livello di Rete",
+  "description": "Metti alla prova le tue conoscenze sul livello di rete e le sue funzioni fondamentali!",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Quali sono le due funzioni fondamentali del livello di rete?",
+      "options": [
+        { "id": 1, "text": "Encoding e Decoding" },
+        { "id": 2, "text": "Compression e Decompression" },
+        { "id": 3, "text": "Routing e Forwarding" },
+        { "id": 4, "text": "Authentication e Authorization" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 2,
+      "question": "Quale sottolivello del livello di rete si occupa delle funzioni di forwarding?",
+      "options": [
+        { "id": 1, "text": "Data Plane" },
+        { "id": 2, "text": "Control Plane" },
+        { "id": 3, "text": "Management Plane" },
+        { "id": 4, "text": "Service Plane" }
+      ],
+      "correctOptionId": 1
+    },
+    {
+      "id": 3,
+      "question": "Cosa fa il Control Plane nel livello di rete?",
+      "options": [
+        { "id": 1, "text": "Inoltra velocemente i pacchetti" },
+        { "id": 2, "text": "Controlla la qualità del servizio" },
+        { "id": 3, "text": "Gestisce la sicurezza dei dati" },
+        { "id": 4, "text": "Gestisce le funzioni di routing e crea le tabelle di routing" }
+      ],
+      "correctOptionId": 4
+    },
+    {
+      "id": 4,
+      "question": "Nel servizio CONNECTION-ORIENTED:",
+      "options": [
+        { "id": 1, "text": "Si stabilisce una connessione prima di inviare i dati" },
+        { "id": 2, "text": "I pacchetti viaggiano indipendentemente" },
+        { "id": 3, "text": "Non c'è garanzia di ordine dei dati" },
+        { "id": 4, "text": "È più veloce del connection-less" }
+      ],
+      "correctOptionId": 1
+    },
+    {
+      "id": 5,
+      "question": "Il servizio CONNECTION-LESS può essere paragonato a:",
+      "options": [
+        { "id": 1, "text": "Una telefonata" },
+        { "id": 2, "text": "Una videochiamata" },
+        { "id": 3, "text": "Spedire una lettera" },
+        { "id": 4, "text": "Un collegamento via cavo" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 6,
+      "question": "Quale funzione determina il percorso che seguono i pacchetti attraverso la rete?",
+      "options": [
+        { "id": 1, "text": "Forwarding" },
+        { "id": 2, "text": "Switching" },
+        { "id": 3, "text": "Bridging" },
+        { "id": 4, "text": "Routing" }
+      ],
+      "correctOptionId": 4
+    },
+    {
+      "id": 7,
+      "question": "Quando un pacchetto arriva a un router, quale operazione viene eseguita dal Data Plane?",
+      "options": [
+        { "id": 1, "text": "Controlla l'indirizzo di destinazione e inoltra il pacchetto sulla porta corretta" },
+        { "id": 2, "text": "Aggiorna le tabelle di routing" },
+        { "id": 3, "text": "Comunica con altri router" },
+        { "id": 4, "text": "Calcola percorsi alternativi" }
+      ],
+      "correctOptionId": 1
+    },
+    {
+      "id": 8,
+      "question": "Gli algoritmi di routing hanno la capacità di:",
+      "options": [
+        { "id": 1, "text": "Solo calcolare la strada migliore" },
+        { "id": 2, "text": "Solo gestire i guasti nella rete" },
+        { "id": 3, "text": "Calcolare la strada migliore e trovare percorsi alternativi in caso di guasti" },
+        { "id": 4, "text": "Comprimere i dati" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 9,
+      "question": "Quale caratteristica distingue il Data Plane dal Control Plane?",
+      "options": [
+        { "id": 1, "text": "Il Data Plane lavora più lentamente" },
+        { "id": 2, "text": "Il Data Plane gestisce le tabelle di routing" },
+        { "id": 3, "text": "Il Data Plane comunica con altri router" },
+        { "id": 4, "text": "Il Data Plane lavora velocemente per spostare i pacchetti" }
+      ],
+      "correctOptionId": 4
+    },
+    {
+      "id": 10,
+      "question": "Nel servizio CONNECTION-ORIENTED, quale garanzia viene offerta?",
+      "options": [
+        { "id": 1, "text": "Velocità massima di trasmissione" },
+        { "id": 2, "text": "I dati arrivano nell'ordine giusto" },
+        { "id": 3, "text": "Nessuna perdita di pacchetti mai" },
+        { "id": 4, "text": "Crittografia automatica" }
+      ],
+      "correctOptionId": 2
+    }
+  ]
+},
+
 {
-    "id": "general-knowledge",
-    "title": "Quiz di Cultura Generale",
-    "description": "Metti alla prova le tue conoscenze con queste domande di cultura generale!",
-    "questions": [
-      {
-        "id": 1,
-        "question": "Qual è la capitale dell'Italia?",
-        "options": [
-          { "id": 1, "text": "Milano" },
-          { "id": 2, "text": "Roma" },
-          { "id": 3, "text": "Napoli" },
-          { "id": 4, "text": "Firenze" }
-        ],
-        "correctOptionId": 2
-      },
-      {
-        "id": 2,
-        "question": "Chi ha dipinto la Gioconda?",
-        "options": [
-          { "id": 1, "text": "Michelangelo" },
-          { "id": 2, "text": "Leonardo da Vinci" },
-          { "id": 3, "text": "Raffaello" },
-          { "id": 4, "text": "Caravaggio" }
-        ],
-        "correctOptionId": 2
-      },
-      {
-        "id": 3,
-        "question": "Qual è il pianeta più grande del sistema solare?",
-        "options": [
-          { "id": 1, "text": "Terra" },
-          { "id": 2, "text": "Giove" },
-          { "id": 3, "text": "Saturno" },
-          { "id": 4, "text": "Marte" }
-        ],
-        "correctOptionId": 2
-      },
-      {
-        "id": 4,
-        "question": "Quanti lati ha un pentagono?",
-        "options": [
-          { "id": 1, "text": "4" },
-          { "id": 2, "text": "5" },
-          { "id": 3, "text": "6" },
-          { "id": 4, "text": "7" }
-        ],
-        "correctOptionId": 2
-      },
-      {
-        "id": 5,
-        "question": "Chi ha scritto 'I Promessi Sposi'?",
-        "options": [
-          { "id": 1, "text": "Italo Calvino" },
-          { "id": 2, "text": "Alessandro Manzoni" },
-          { "id": 3, "text": "Giacomo Leopardi" },
-          { "id": 4, "text": "Luigi Pirandello" }
-        ],
-        "correctOptionId": 2
-      }
-    ]
-  }
-  
+  "id": "ip-protocol",
+  "title": "Quiz sul Protocollo IP",
+  "description": "Metti alla prova le tue conoscenze sul protocollo IP e le sue caratteristiche fondamentali!",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In che tipo di reti viene principalmente utilizzato il protocollo IP?",
+      "options": [
+        { "id": 1, "text": "LAN (Local Area Network)" },
+        { "id": 2, "text": "PAN (Personal Area Network)" },
+        { "id": 3, "text": "WAN (Wide Area Network)" },
+        { "id": 4, "text": "MAN (Metropolitan Area Network)" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 2,
+      "question": "Quali sono i tre compiti fondamentali del protocollo IP?",
+      "options": [
+        { "id": 1, "text": "Indirizzamento, suddivisione in pacchetti, trasferimento dei dati" },
+        { "id": 2, "text": "Crittografia, compressione, autenticazione" },
+        { "id": 3, "text": "Routing, switching, bridging" },
+        { "id": 4, "text": "Codifica, decodifica, validazione" }
+      ],
+      "correctOptionId": 1
+    },
+    {
+      "id": 3,
+      "question": "A cosa serve l'indirizzamento nel protocollo IP?",
+      "options": [
+        { "id": 1, "text": "A dividere i dati in pacchetti" },
+        { "id": 2, "text": "A crittografare le informazioni" },
+        { "id": 3, "text": "A comprimere i dati" },
+        { "id": 4, "text": "Ad assegnare un indirizzo unico a ogni dispositivo nella rete" }
+      ],
+      "correctOptionId": 4
+    },
+    {
+      "id": 4,
+      "question": "Perché i dati vengono suddivisi in pacchetti?",
+      "options": [
+        { "id": 1, "text": "Per rendere i dati più sicuri" },
+        { "id": 2, "text": "Per permettere ai dati grandi di viaggiare più facilmente nella rete" },
+        { "id": 3, "text": "Per velocizzare la crittografia" },
+        { "id": 4, "text": "Per ridurre il consumo di energia" }
+      ],
+      "correctOptionId": 2
+    },
+    {
+      "id": 5,
+      "question": "Cosa indica il campo Version nell'header IP?",
+      "options": [
+        { "id": 1, "text": "La dimensione del pacchetto" },
+        { "id": 2, "text": "Il numero di router attraversati" },
+        { "id": 3, "text": "Quale versione del protocollo IP si sta usando" },
+        { "id": 4, "text": "La priorità del pacchetto" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 6,
+      "question": "A cosa serve il campo HLEN nell'header IP?",
+      "options": [
+        { "id": 1, "text": "Indica la lunghezza dell'header" },
+        { "id": 2, "text": "Indica il tipo di dati" },
+        { "id": 3, "text": "Indica la velocità di trasmissione" },
+        { "id": 4, "text": "Indica l'indirizzo di destinazione" }
+      ],
+      "correctOptionId": 1
+    },
+    {
+      "id": 7,
+      "question": "Cosa succede quando il campo TTL (Time To Live) arriva a zero?",
+      "options": [
+        { "id": 1, "text": "Il pacchetto viene ritrasmesso" },
+        { "id": 2, "text": "Il pacchetto viene crittografato" },
+        { "id": 3, "text": "Il pacchetto viene eliminato" },
+        { "id": 4, "text": "Il pacchetto viene compresso" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 8,
+      "question": "Qual è lo scopo del campo TTL nell'header IP?",
+      "options": [
+        { "id": 1, "text": "Indicare la priorità del pacchetto" },
+        { "id": 2, "text": "Evitare che un pacchetto continui a girare nella rete all'infinito" },
+        { "id": 3, "text": "Specificare il tipo di dati contenuti" },
+        { "id": 4, "text": "Determinare la velocità di trasmissione" }
+      ],
+      "correctOptionId": 2
+    },
+    {
+      "id": 9,
+      "question": "A cosa serve il campo Protocol nell'header IP?",
+      "options": [
+        { "id": 1, "text": "Indica la versione di IP utilizzata" },
+        { "id": 2, "text": "Indica la lunghezza del pacchetto" },
+        { "id": 3, "text": "Indica il numero di router da attraversare" },
+        { "id": 4, "text": "Indica quale protocollo del livello superiore ha creato i dati" }
+      ],
+      "correctOptionId": 4
+    },
+    {
+      "id": 10,
+      "question": "Cosa succede se un computer riceve un pacchetto con una versione IP che non sa gestire?",
+      "options": [
+        { "id": 1, "text": "Il pacchetto viene scartato" },
+        { "id": 2, "text": "Il pacchetto viene automaticamente convertito" },
+        { "id": 3, "text": "Il pacchetto viene rimandato al mittente" },
+        { "id": 4, "text": "Il pacchetto viene messo in coda" }
+      ],
+      "correctOptionId": 1
+    },
+    {
+      "id": 11,
+      "question": "Come vengono utilizzati i protocolli di controllo insieme al protocollo IP?",
+      "options": [
+        { "id": 1, "text": "Per crittografare i dati" },
+        { "id": 2, "text": "Per comprimere le informazioni" },
+        { "id": 3, "text": "Per permettere ai router di comunicare e scambiarsi informazioni sulla rete" },
+        { "id": 4, "text": "Per autenticare gli utenti" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 12,
+      "question": "Cosa significa che ogni pacchetto viaggia 'in modo indipendente'?",
+      "options": [
+        { "id": 1, "text": "Che ogni pacchetto è crittografato separatamente" },
+        { "id": 2, "text": "Che ogni pacchetto può seguire percorsi diversi nella rete" },
+        { "id": 3, "text": "Che ogni pacchetto ha una dimensione diversa" },
+        { "id": 4, "text": "Che ogni pacchetto usa protocolli diversi" }
+      ],
+      "correctOptionId": 2
+    }
+  ]
+},
+{
+  "id": "ip-addressing",
+  "title": "Quiz su Indirizzi IP e Subnetting",
+  "description": "Metti alla prova le tue conoscenze sugli indirizzi IP, subnetting e tecnologie di indirizzamento avanzate!",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual è l'indirizzo di rete per una classe B?",
+      "options": [
+        { "id": 1, "text": "X.0.0.0" },
+        { "id": 2, "text": "X.Y.0.0" },
+        { "id": 3, "text": "X.Y.Z.0" },
+        { "id": 4, "text": "X.255.255.255" }
+      ],
+      "correctOptionId": 2
+    },
+    {
+      "id": 2,
+      "question": "A cosa servono gli indirizzi di broadcast?",
+      "options": [
+        { "id": 1, "text": "Per identificare la rete" },
+        { "id": 2, "text": "Per mandare messaggi a tutti gli host di una rete" },
+        { "id": 3, "text": "Per collegare router diversi" },
+        { "id": 4, "text": "Per creare subnet" }
+      ],
+      "correctOptionId": 2
+    },
+    {
+      "id": 3,
+      "question": "Qual è l'indirizzo di broadcast per una classe C?",
+      "options": [
+        { "id": 1, "text": "X.255.255.255" },
+        { "id": 2, "text": "X.Y.255.255" },
+        { "id": 3, "text": "X.Y.Z.255" },
+        { "id": 4, "text": "X.Y.Z.0" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 4,
+      "question": "Qual è la caratteristica degli indirizzi IP pubblici?",
+      "options": [
+        { "id": 1, "text": "Si affacciano su Internet e sono unici in tutto il pianeta" },
+        { "id": 2, "text": "Possono essere ripetuti in reti diverse" },
+        { "id": 3, "text": "Vengono usati solo nelle reti interne" },
+        { "id": 4, "text": "Cambiano automaticamente ogni giorno" }
+      ],
+      "correctOptionId": 1
+    },
+    {
+      "id": 5,
+      "question": "Cosa caratterizza gli indirizzi IP dinamici?",
+      "options": [
+        { "id": 1, "text": "Vengono assegnati permanentemente a un dispositivo" },
+        { "id": 2, "text": "Sono sempre pubblici" },
+        { "id": 3, "text": "Cambiano ogni volta che il dispositivo si collega a Internet" },
+        { "id": 4, "text": "Non possono essere utilizzati per Internet" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 6,
+      "question": "Cos'è il subnetting?",
+      "options": [
+        { "id": 1, "text": "Un protocollo di sicurezza" },
+        { "id": 2, "text": "La suddivisione di una rete in sotto-reti logiche" },
+        { "id": 3, "text": "Un tipo di indirizzo IP" },
+        { "id": 4, "text": "Una tecnologia di crittografia" }
+      ],
+      "correctOptionId": 2
+    },
+    {
+      "id": 7,
+      "question": "Qual è la subnet mask di default per la classe A?",
+      "options": [
+        { "id": 1, "text": "255.0.0.0 (/8)" },
+        { "id": 2, "text": "255.255.0.0 (/16)" },
+        { "id": 3, "text": "255.255.255.0 (/24)" },
+        { "id": 4, "text": "255.255.255.255 (/32)" }
+      ],
+      "correctOptionId": 1
+    },
+    {
+      "id": 8,
+      "question": "A cosa serve il processo di messa in AND?",
+      "options": [
+        { "id": 1, "text": "Per crittografare gli indirizzi" },
+        { "id": 2, "text": "Per comprimere i dati" },
+        { "id": 3, "text": "Per creare nuove subnet" },
+        { "id": 4, "text": "Per verificare se due host appartengono alla stessa sottorete" }
+      ],
+      "correctOptionId": 4
+    },
+    {
+      "id": 9,
+      "question": "Cosa significa CIDR?",
+      "options": [
+        { "id": 1, "text": "Crea un sistema di indirizzamento senza classi fisse" },
+        { "id": 2, "text": "È un protocollo di routing" },
+        { "id": 3, "text": "È un tipo di subnet mask" },
+        { "id": 4, "text": "È una tecnologia di sicurezza" }
+      ],
+      "correctOptionId": 1
+    },
+    {
+      "id": 10,
+      "question": "Qual è il vantaggio del VLSM?",
+      "options": [
+        { "id": 1, "text": "Aumenta la velocità di trasmissione" },
+        { "id": 2, "text": "Migliora la sicurezza della rete" },
+        { "id": 3, "text": "Permette di usare subnet mask di lunghezza diversa ottimizzando gli indirizzi" },
+        { "id": 4, "text": "Elimina il bisogno di router" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 11,
+      "question": "Perché bisogna evitare tutti 0 o tutti 1 nella parte subnet e host?",
+      "options": [
+        { "id": 1, "text": "Causano errori di trasmissione" },
+        { "id": 2, "text": "Diventerebbero indirizzi speciali riservati alla rete e al broadcast" },
+        { "id": 3, "text": "Non sono compatibili con i router" },
+        { "id": 4, "text": "Rallentano la rete" }
+      ],
+      "correctOptionId": 2
+    },
+    {
+      "id": 12,
+      "question": "Cosa indica la subnet mask?",
+      "options": [
+        { "id": 1, "text": "Il tipo di protocollo utilizzato" },
+        { "id": 2, "text": "La velocità della connessione" },
+        { "id": 3, "text": "Quanti bit dell'indirizzo appartengono alla rete e quanti all'host" },
+        { "id": 4, "text": "Il numero massimo di dispositivi collegabili" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 13,
+      "question": "Qual è il problema del subnet statico tradizionale?",
+      "options": [
+        { "id": 1, "text": "È troppo lento" },
+        { "id": 2, "text": "Non è sicuro" },
+        { "id": 3, "text": "Alcune subnet potevano avere molti host e altre pochi, ma tutte consumavano lo stesso spazio con spreco" },
+        { "id": 4, "text": "Non funziona con Internet" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 14,
+      "question": "Cosa permette di creare il 'supernetting' con CIDR?",
+      "options": [
+        { "id": 1, "text": "Più reti unite insieme rappresentate da un singolo indirizzo IP" },
+        { "id": 2, "text": "Subnet più piccole" },
+        { "id": 3, "text": "Connessioni più veloci" },
+        { "id": 4, "text": "Maggiore sicurezza" }
+      ],
+      "correctOptionId": 1
+    },
+    {
+      "id": 15,
+      "question": "Quale caratteristica hanno gli indirizzi IP privati?",
+      "options": [
+        { "id": 1, "text": "Sono sempre dinamici" },
+        { "id": 2, "text": "Non possono mai essere utilizzati" },
+        { "id": 3, "text": "Servono per le reti interne e possono essere ripetuti in reti diverse" },
+        { "id": 4, "text": "Sono più veloci di quelli pubblici" }
+      ],
+      "correctOptionId": 3
+    }
+  ]
+},
+
+{
+  "id": "ip-address-basics",
+  "title": "Quiz su Indirizzi IP - Concetti Base",
+  "description": "Metti alla prova le tue conoscenze sui concetti fondamentali degli indirizzi IP e le loro classi!",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Cos'è un indirizzo IP?",
+      "options": [
+        { "id": 1, "text": "Un indirizzo fisico della scheda di rete" },
+        { "id": 2, "text": "Un indirizzo logico che rappresenta un'interfaccia di rete" },
+        { "id": 3, "text": "Un protocollo di comunicazione" },
+        { "id": 4, "text": "Un tipo di cavo di rete" }
+      ],
+      "correctOptionId": 2
+    },
+    {
+      "id": 2,
+      "question": "Quanti bit hanno gli indirizzi IP?",
+      "options": [
+        { "id": 1, "text": "16 bit" },
+        { "id": 2, "text": "24 bit" },
+        { "id": 3, "text": "32 bit" },
+        { "id": 4, "text": "64 bit" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 3,
+      "question": "Se un host ha più interfacce di rete, cosa succede agli indirizzi IP?",
+      "options": [
+        { "id": 1, "text": "Usa lo stesso indirizzo per tutte le interfacce" },
+        { "id": 2, "text": "Ogni interfaccia ha un indirizzo IP diverso" },
+        { "id": 3, "text": "Non può avere più interfacce" },
+        { "id": 4, "text": "Deve scegliere un'interfaccia principale" }
+      ],
+      "correctOptionId": 2
+    },
+    {
+      "id": 4,
+      "question": "Cosa rappresenta il NetID in un indirizzo IP?",
+      "options": [
+        { "id": 1, "text": "L'indirizzo specifico dell'host" },
+        { "id": 2, "text": "Il tipo di protocollo utilizzato" },
+        { "id": 3, "text": "L'indirizzo della rete in cui si trova l'host" },
+        { "id": 4, "text": "La velocità della connessione" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 5,
+      "question": "Cosa rappresenta l'HostID in un indirizzo IP?",
+      "options": [
+        { "id": 1, "text": "L'indirizzo specifico dell'host all'interno della rete" },
+        { "id": 2, "text": "L'indirizzo della rete" },
+        { "id": 3, "text": "Il tipo di dispositivo" },
+        { "id": 4, "text": "La classe dell'indirizzo" }
+      ],
+      "correctOptionId": 1
+    },
+    {
+      "id": 6,
+      "question": "Qual è il range di indirizzi della classe A?",
+      "options": [
+        { "id": 1, "text": "128.0.0.0 a 191.255.255.255" },
+        { "id": 2, "text": "192.0.0.0 a 253.255.255.255" },
+        { "id": 3, "text": "0.0.0.0 a 127.255.255.255" },
+        { "id": 4, "text": "254.0.0.0 a 255.255.255.255" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 7,
+      "question": "Quanti bit usa la classe A per la rete?",
+      "options": [
+        { "id": 1, "text": "7 bit" },
+        { "id": 2, "text": "8 bit" },
+        { "id": 3, "text": "16 bit" },
+        { "id": 4, "text": "24 bit" }
+      ],
+      "correctOptionId": 1
+    },
+    {
+      "id": 8,
+      "question": "Perché la classe A può indirizzare solo 126 reti invece di 128?",
+      "options": [
+        { "id": 1, "text": "Per limitazioni tecniche" },
+        { "id": 2, "text": "Perché i valori 0 e 127 sono riservati" },
+        { "id": 3, "text": "Per motivi di sicurezza" },
+        { "id": 4, "text": "Per compatibilità con altri protocolli" }
+      ],
+      "correctOptionId": 2
+    },
+    {
+      "id": 9,
+      "question": "Qual è il range di indirizzi della classe B?",
+      "options": [
+        { "id": 1, "text": "0.0.0.0 a 127.255.255.255" },
+        { "id": 2, "text": "128.0.0.0 a 191.255.255.255" },
+        { "id": 3, "text": "192.0.0.0 a 253.255.255.255" },
+        { "id": 4, "text": "254.0.0.0 a 255.255.255.255" }
+      ],
+      "correctOptionId": 2
+    },
+    {
+      "id": 10,
+      "question": "Quanti bit usa la classe B per la rete e per gli host?",
+      "options": [
+        { "id": 1, "text": "8 bit per la rete, 24 bit per gli host" },
+        { "id": 2, "text": "16 bit per la rete, 16 bit per gli host" },
+        { "id": 3, "text": "24 bit per la rete, 8 bit per gli host" },
+        { "id": 4, "text": "7 bit per la rete, 25 bit per gli host" }
+      ],
+      "correctOptionId": 2
+    },
+    {
+      "id": 11,
+      "question": "Per che tipo di reti è adatta la classe A?",
+      "options": [
+        { "id": 1, "text": "Reti di piccole dimensioni come gli uffici" },
+        { "id": 2, "text": "Reti di medie dimensioni come le università" },
+        { "id": 3, "text": "Reti di grandi dimensioni come le multinazionali" },
+        { "id": 4, "text": "Solo per reti domestiche" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 12,
+      "question": "Qual è il range di indirizzi della classe C?",
+      "options": [
+        { "id": 1, "text": "128.0.0.0 a 191.255.255.255" },
+        { "id": 2, "text": "0.0.0.0 a 127.255.255.255" },
+        { "id": 3, "text": "192.0.0.0 a 253.255.255.255" },
+        { "id": 4, "text": "254.0.0.0 a 255.255.255.255" }
+      ],
+      "correctOptionId": 3
+    },
+    {
+      "id": 13,
+      "question": "Quanti bit usa la classe C per gli host?",
+      "options": [
+        { "id": 1, "text": "8 bit" },
+        { "id": 2, "text": "16 bit" },
+        { "id": 3, "text": "24 bit" },
+        { "id": 4, "text": "32 bit" }
+      ],
+      "correctOptionId": 1
+    },
+    {
+      "id": 14,
+      "question": "Per che tipo di reti è più adatta la classe C?",
+      "options": [
+        { "id": 1, "text": "Reti di grandi dimensioni" },
+        { "id": 2, "text": "Reti di piccole dimensioni come gli uffici" },
+        { "id": 3, "text": "Reti di medie dimensioni" },
+        { "id": 4, "text": "Solo per server" }
+      ],
+      "correctOptionId": 2
+    },
+    {
+      "id": 15,
+      "question": "Quante classi di indirizzi IP possono essere utilizzate per assegnare indirizzi agli host?",
+      "options": [
+        { "id": 1, "text": "2 classi" },
+        { "id": 2, "text": "3 classi" },
+        { "id": 3, "text": "4 classi" },
+        { "id": 4, "text": "5 classi" }
+      ],
+      "correctOptionId": 2
+    }
+  ]
+}
+]
