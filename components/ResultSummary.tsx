@@ -27,6 +27,13 @@ export default function ResultSummary({ quiz, results }: ResultSummaryProps) {
         </p>
       </div>
 
+      <div>
+        Link per il ripasso :{" "}
+        <a className="text-blue-800 " target="_blank" href={results.urlRipasso}>
+          studia
+        </a>
+      </div>
+
       <div className="mt-8">
         <h2 className="text-xl font-semibold mb-4">Riepilogo risposte</h2>
 

@@ -15,6 +15,7 @@ export interface Quiz {
   title: string;
   description: string;
   questions: Question[];
+  urlRipasso: string;
 }
 
 export interface UserAnswer {
@@ -28,4 +29,5 @@ export interface QuizResults {
   correctAnswers: number;
   score: number;
   answers: UserAnswer[];
+  urlRipasso: string;
 }

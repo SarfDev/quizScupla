@@ -37,8 +37,8 @@ export const QuizProvider: React.FC<{ children: ReactNode }> = ({
 
   const setCurrentQuizById = (quizId: string) => {
     if (!quizzes) return;
-    
-    const quiz = quizzes.find(q => q.id === quizId);
+
+    const quiz = quizzes.find((q) => q.id === quizId);
     if (quiz) {
       setCurrentQuiz(quiz);
       setCurrentQuestionIndex(0);
@@ -48,7 +48,10 @@ export const QuizProvider: React.FC<{ children: ReactNode }> = ({
   };
 
   const nextQuestion = () => {
-    if (currentQuiz && currentQuestionIndex < currentQuiz.questions.length - 1) {
+    if (
+      currentQuiz &&
+      currentQuestionIndex < currentQuiz.questions.length - 1
+    ) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     }
   };
@@ -108,6 +111,7 @@ export const QuizProvider: React.FC<{ children: ReactNode }> = ({
       correctAnswers,
       score,
       answers: userAnswers,
+      urlRipasso: currentQuiz.urlRipasso,
     });
   };
 
